@@ -1,3 +1,219 @@
-#heading {
-  color: red;
+.app {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+    .logo-container {
+      img {
+        width: 200px;
+      }
+    }
+    .nav-items {
+      display: flex;
+      .item {
+        padding: 20px;
+        font-size: 20px;
+      }
+      .log-in {
+        padding: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+  .body {
+    padding: 20px;
+    .search-filter {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .search {
+        input {
+          width: 400px;
+          height: 35px;
+          margin-right: 20px;
+        }
+        button {
+          padding: 10px;
+          width: 100px;
+          cursor: pointer;
+        }
+      }
+      .filter {
+        padding: 10px;
+        button {
+          padding: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .res-container {
+      display: flex;
+      flex-wrap: wrap;
+      .shimmer-container {
+        height: 250px;
+        width: 200px;
+        margin: 20px;
+        padding: 10px;
+        .shimmer-imgContainer {
+          height: 150px;
+          width: 200px;
+          object-fit: cover;
+          background-color: aliceblue;
+        }
+        .shimmer-details-res {
+          display: flex;
+          flex-direction: column;
+        }
+        .shimmer-name-cuisine {
+          height: 25px;
+          width: 200px;
+          margin-top: 5px;
+          margin-bottom: 5px;
+          background-color: aliceblue;
+        }
+      }
+    }
+    .card-container {
+      position: relative;
+      margin: 20px;
+      padding: 10px;
+      height: 250px;
+      width: 200px;
+      border: 1px solid white;
+      box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+      .img {
+        height: 150px;
+        width: 200px;
+        object-fit: cover;
+      }
+      .details-res {
+        h3,
+        h4,
+        h5 {
+          margin: 0;
+          padding-top: 5px;
+          padding-bottom: 5px;
+        }
+        .rating-deliveryTime-conatiner {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+    .card-container:hover {
+      border: 1px solid grey;
+      cursor: pointer;
+    }
+  }
+  .user-card {
+    padding: 10px;
+    border: 1px solid black;
+  }
+  .open-label-card-container {
+    position: relative;
+    .isOpenLabel {
+      position: absolute;
+      top: 14px;
+      left: 30px;
+      z-index: 99;
+      background-color: white;
+      padding: 5px 10px;
+      color: black;
+    }
+  }
+  .menu {
+    text-align: center;
+    margin: auto;
+    .accordian-container {
+      width: 50%;
+      margin: auto;
+    }
+
+    .accordian-list {
+      box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      display: flex;
+      align-items: flex-start;
+      .image-add-container {
+        position: relative;
+        .menu-img {
+          height: 100px;
+        }
+        button {
+          position: absolute;
+          /* top: 10px; */
+          bottom: -10px;
+          right: 45px;
+          padding: 5px 20px;
+          background-color: green;
+          border: none;
+        }
+      }
+
+      .details-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .heading {
+        font-weight: bold;
+        font-size: large;
+        padding-bottom: 10px;
+      }
+      .accordian-description {
+        width: 50%;
+        font-size: x-small;
+      }
+    }
+  }
+  .cart-container {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    .clear-cart {
+      background-color: black;
+      color: white;
+      padding: 10px 20px;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+    .accordian-list {
+      box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      display: flex;
+      align-items: flex-start;
+      .image-add-container {
+        position: relative;
+        .menu-img {
+          height: 100px;
+        }
+        button {
+          position: absolute;
+          /* top: 10px; */
+          bottom: -10px;
+          right: 45px;
+          padding: 5px 20px;
+          background-color: green;
+          border: none;
+        }
+      }
+
+      .details-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .heading {
+        font-weight: bold;
+        font-size: large;
+        padding-bottom: 10px;
+      }
+      .accordian-description {
+        width: 50%;
+        font-size: x-small;
+      }
+    }
+  }
 }
